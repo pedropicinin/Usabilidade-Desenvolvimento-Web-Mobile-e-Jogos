@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Pedro Picinin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="pagina-perfil">
+
+    <header class="cabecalho">
+      <h1>Atividade A3-Fase2</h1>
+    </header>
+
+    <section class="secao-principal">
+      <img src="img/Foto-34-1.png" alt="" class="foto-destaque" id="fotoAtual">
+
+      <div class="dados-pessoais">
+        <h1>Pedro Picinin Velloso Vieira</h1>
+        <p><strong>RA:</strong> 12345678</p>
+        <p><strong>Curso:</strong> Ciência da Computação – 3º Período</p>
+        <p><strong>Endereço:</strong> Rua Eugênio Vidigal Amaro 160, Estoril</p>
+        <p><strong>E-mail:</strong> pepepicinin@gmail.com</p>
+      </div>
+    </section>
+
+    <section class="galeria-fotos">
+      <img src="img/Foto-34-1.png" onclick="trocarFoto('img/Foto-34-1.png')">
+      <img src="img/Foto-34-2.png" onclick="trocarFoto('img/Foto-34-2.png')">
+      <img src="img/Foto-34-3.jpg" onclick="trocarFoto('img/Foto-34-3.jpg')">
+    </section>
+
+    <section class="lista-ucs">
+      <h2>UCs que já cursei</h2>
+      <ul>
+        <li>Modelagem de Software</li>
+        <li>Programação de Soluções Computacionais</li>
+        <li>Vida e Carreira</li>
+        <li>Ambientes Computacionais e Conectividade</li>
+        <li>Sistemas Computacionais e Segurança</li>
+        <li>Gestão e Qualidade de Software</li>
+        <li>Usabilidade, Desenvolvimento Web, Mobile e Jogos</li>
+      </ul>
+    </section>
+
+    <section class="sobre-mim">
+      <h2>Um pouco sobre mim</h2>
+
+      <div class="box-descricao">
+        <h3>Pessoal</h3>
+        <p>Tenho 20 anos e gosto de aproveitar meu tempo livre assistindo aos jogos do Atlético Mineiro, acompanhando cada partida do time. Sou apaixonado por carros e também tenho um grande interesse por viagens. Gosto de praticar esportes, como futebol e caminhada, além de passar tempo com minha família e minha namorada.</p>
+      </div>
+
+      <div class="box-descricao">
+        <h3>Profissional</h3>
+        <p>Atualmente, sou assistente de TI e trabalho na parte de redes e infraestrutura. Minha função envolve a manutenção e configuração de equipamentos de rede, além de garantir o bom funcionamento da infraestrutura de TI da empresa. Estou cursando Ciência da Computação e sempre busco aprimorar meus conhecimentos na área, explorando novas tecnologias e soluções para otimizar a rede e os sistemas da empresa.</p>
+      </div>
+    </section>
+
+    <section class="redes-sociais">
+      <h2>Minhas redes</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/pedropicinin_/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/pedropicinin/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </section>
+
+  </div>
+
+  <script>
+    function trocarFoto(caminho) {
+      document.getElementById("fotoAtual").src = caminho;
+    }
+  </script>
+</body>
+</html>
