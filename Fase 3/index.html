@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Pedro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Perfil do Aluno - Pedro Picinin</h1>
+    </header>
+
+    <main class="conteudoPrincipal">
+        <section class="fotoPerfil">
+            <img src="../img/Foto-34-1.png" alt="" width="200">
+        </section>
+
+        <section class="dadosBasicos">
+            <p><strong>Nome:</strong> Pedro Picinin Velloso Vieira</p>
+            <p><strong>RA:</strong> 123456789</p>
+            <p><strong>Curso:</strong> Ciência da Computação</p>
+            <p><strong>Período:</strong> 3º</p>
+            <p><strong>Endereço:</strong> Rua Eugênio Vidigal Amaro, 160 - Estoril</p>
+            <p><strong>Email:</strong> pepepicinin@gmail.com</p>
+        </section>
+
+        <section class="lista-ucs">
+            <h2>UCs que já cursei</h2>
+            <ul id="listaUCs">
+                <li>Modelagem de Software <button onclick="moverCima(this)">⬆️</button> <button onclick="moverBaixo(this)">⬇️</button></li>
+                <li>Programação de Soluções Computacionais <button onclick="moverCima(this)">⬆️</button> <button onclick="moverBaixo(this)">⬇️</button></li>
+                <li>Vida e Carreira <button onclick="moverCima(this)">⬆️</button> <button onclick="moverBaixo(this)">⬇️</button></li>
+            </ul>
+            <button onclick="adicionarUC()">Adicionar UC</button>
+        </section>
+
+        <section class="descricao">
+            <h2>Sobre Mim</h2>
+            <h3>Pessoal:</h3>
+            <p>Sou apaixonado por carros, futebol e viagens. Torço pro Galo e acompanho todos os jogos. Gosto de caminhar e curtir momentos com minha família e minha namorada.</p>
+            <h3>Profissional:</h3>
+            <p>Sou auxiliar de TI, cuidando da rede e infraestrutura da empresa. Curso Ciência da Computação e estou sempre buscando evoluir na área de tecnologia.</p>
+        </section>
+
+        <section class="redes">
+            <h2>Redes Sociais</h2>
+            <ul>
+                <li><a href="https://www.instagram.com/pedropicinin_" target="_blank">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/pedropicinin/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
+
+        <section class="dados-extra">
+            <h2>Informações adicionais</h2>
+            <label>CPF:
+                <input type="text" id="campoCpf" onblur="validarCpf(this.value)">
+            </label><br><br>
+            <label>E-mail:
+                <input type="email" id="campoEmail" onblur="validarEmail(this.value)">
+            </label>
+        </section>
+
+        <section class="editar-descricao">
+            <h2>Atualizar descrição pessoal</h2>
+            <textarea id="novaDescricao" rows="4" cols="50" placeholder="Digite algo novo sobre você..."></textarea><br>
+            <button onclick="inserirDescricao()">Adicionar</button>
+            <div id="conteudoDescricao"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
